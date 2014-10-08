@@ -1,0 +1,30 @@
+function mark_all(r)
+    %Дано: Перегородок нет
+    %Рез:1)робот в исх. кл. 2)закрашено всё
+    
+
+    
+    while ~r.is_bord('s')
+        r.step('s')
+    end
+
+    while ~r.is_bord('w')
+        r.step('w')
+        r.mark()
+    end
+    
+    while ~r.is_bord('o')
+    
+        while ~r.is_bord('n')
+        r.step('n')
+        r.mark()
+    end
+    
+    r.step('o')
+    
+    while ~r.is_bord('s')
+        r.step('s')
+    
+    while r.is_mark
+        r.step('n')
+    end
