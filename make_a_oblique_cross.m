@@ -1,6 +1,7 @@
 function make_a_oblique_cross(r)
 %Дано: Поле с роботом
 %Результат: Косой крест
+
     make_a_part_of_oblique_cross(r, 's', 'w')
     make_a_part_of_oblique_cross(r, 'w', 'n')
     make_a_part_of_oblique_cross(r, 'n', 'o')
@@ -9,6 +10,9 @@ function make_a_oblique_cross(r)
 end
 
 function make_a_part_of_oblique_cross(r, side1, side2)
+%Дано: Робот, направление к углу
+%Результат: Робот вернулся в исходную точку, закрасив часть косого креста
+
     counter = 0;
     while r.is_bord(side1) == 0 && r.is_bord(side2) == 0
         r.step(side1)

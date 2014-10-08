@@ -1,6 +1,7 @@
 function backside = backside( side )
 %Дано: Направление
 %Результат: Направление противоположное данному
+
     if side == 'n'
         backside = 's';
     elseif side == 'o'
@@ -9,6 +10,9 @@ function backside = backside( side )
         backside = 'n';
     elseif side == 'w'
         backside = 'o';
+    else
+        error('Неправильно задан праметр')
     end
+    
 end
 

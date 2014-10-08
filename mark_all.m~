@@ -19,8 +19,7 @@ function mark_all(r)
 end
 
 function mark_line(r, side)
-%Дано: Робот, направление
-%Результат: робот закрасил линию и перешел на следующею, если возможно
+%Дано
     while r.is_bord(side) == 0
         r.mark()
         r.step(side)
