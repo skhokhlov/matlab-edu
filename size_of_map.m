@@ -24,6 +24,6 @@ function a=size_of_map(r)
         b(2) = b(2) + 1;
     end
     if b ~= a
-        error('Panic!\n The map is not a rectangle. It's impossible.')
+        error('Panic!\n The map is not a rectangle. It\'s impossible.')
     end
 end
