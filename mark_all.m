@@ -2,7 +2,7 @@ function mark_all(r)
 %Дано: Поле с роботом
 %Результат: Все клетки поля замаркированы
 
-    goto_corner(r)
+    goto_corner(r,'s','w')
     
     while r.is_bord('n') == 0
         mark_line(r,'o')

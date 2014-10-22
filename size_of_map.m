@@ -2,10 +2,10 @@ function a=size_of_map(r)
 %Дано: Поле с роботом
 %Результат: Размеры поля, робот в углу
     
-    a=[1,1];
+    a=[1,1]; %a(1) - x; %a(2) - y
     b=[1,1];
     
-    goto_corner(r)
+    goto_corner(r,'s','w')
     
     while r.is_bord('o') == 0
         r.step('o')
@@ -24,6 +24,6 @@ function a=size_of_map(r)
         b(2) = b(2) + 1;
     end
     if b ~= a
-        error('Panic!\n The map is not a rectangle. It\'s impossible.')
+        error('The map is not a rectangle.')
     end
 end
