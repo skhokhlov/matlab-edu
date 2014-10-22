@@ -1,5 +1,4 @@
 function counter=mark_in_chess(r)
-
 %Дано: Поле с роботом
 %Результат: поле замаркировано в шахматном порядке
 
@@ -36,7 +35,6 @@ function mark_line(r)
         r.step('n')
         marker(r,c)
     end
-    %marker(r,c)
     setGlobal(c);
 end
 
