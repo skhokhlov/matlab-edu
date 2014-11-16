@@ -1,0 +1,4 @@
+function curve(a)
+
+
+end
