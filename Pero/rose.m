@@ -1,25 +1,20 @@
-function rose(n)
-    T=360/n;
+function rose()
+    a=1;
     t=0;
-    while t<360
-        t=t+T;
-        draw_rose(t);
+    
+    for i=0:pi/6:2*pi
+        draw_rose(a,t)
+        t=t+i;
     end
+    
 end
 
-function draw_rose(t)
-    p=Pero(1,0);
-    
-    
-    while (t<360)
-        t=t+360/30;
-        r=cos(3*t + 30);
-        x=r*cos(t + 30); 
-        y=r*sin(t + 30);
+function draw_rose(a,t)
+    p=Pero(a*cos(3*t)*cos(t),a*cos(3*t)*sin(t));
+    for j=0:pi/100:pi
+        x=a*cos(3*j + t)*cos(j + t); 
+        y=a*cos(3*j + t)*sin(j + t);
         p.punct(x, y)
     end
-    
-    
     p.draw();
-    pause(0.01);
 end

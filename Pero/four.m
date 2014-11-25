@@ -3,7 +3,7 @@ A = 1;
 T = 1;
 a0 = 2*A/pi;
 
-detected_cos(A, T, t)
+%detected_cos(A, T, t)
 draw_furie(A, a0, T, t)
 
 end
