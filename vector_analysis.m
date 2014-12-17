@@ -12,12 +12,13 @@ function res = vector_analysis( x )
         if x(i) > max
             max = x(i);
         end
+        
         if x(i) < min
             min = x(i);
         end
             
     end
-    avr = sum/size;
-    res = [ avr, max, min , sum ];
+    
+    res = [ sum/size, max, min , sum ];
 end
 
