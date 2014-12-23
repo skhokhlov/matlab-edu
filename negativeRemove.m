@@ -15,4 +15,3 @@ function [ a ] = negativeRemove( a )
     end
 
 end
-
