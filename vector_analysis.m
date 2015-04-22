@@ -1,5 +1,4 @@
 function res = vector_analysis( x )
-
     size = length(x);
     sum = 0;
     max = -inf;
@@ -24,4 +23,3 @@ function res = vector_analysis( x )
     
     res = [ sum/size , max, min , sum , mul ];
 end
-
