@@ -1,4 +1,5 @@
 function n = connectedComp(g)
+%Считает число компонентов связности
 	mark = zeros(size(g));
 
 	s = find(mark == 0);
